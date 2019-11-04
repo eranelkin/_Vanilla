@@ -1,0 +1,17 @@
+.papa {
+  border: 2px solid yellow;
+  background-color: coral;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  align-items: stretch;
+  z-index: 0;
+}
+
+.child {
+  background-color: darkblue;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  z-index: 1;
+}

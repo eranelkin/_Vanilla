@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+  <script src="index.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="screen-container">
+    <div class="top-bar">
+      <div class="chat-group">
+        <div class="group-text">Eran Elkin</div>
+        <div class="typing-text">... typing</div>
+      </div>
+    </div>
+    <div id="chat" class="chat-container">
+      <div class="message sent">
+        <span class="msg-text">
+          Hello mister
+        </span>
+        <div class="time">10:00</div>
+      </div>
+      <div class="message received">
+        <span class="msg-text">
+          Hello you too
+        </span>
+        <div class="time">10:01</div>
+      </div>
+    </div>
+    <form class="bottom-bar">
+      <input class="txt-msg" placeholder="pls type..." />
+      <button class="send">Send</button>
+    </form>
+  </div>
+</body>
+
+</html>
