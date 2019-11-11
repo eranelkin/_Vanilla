@@ -14,7 +14,7 @@ body {
 
 .top-bar {
   height: 60px;
-  position: relative;
+  /* position: relative; */
   background-color: rgb(99, 100, 104);
   z-index: 1;
 }
@@ -28,10 +28,10 @@ body {
 }
 
 .bottom-bar {
-  position: relative;
+  /* position: relative; */
   height: 60px;
   background-color: rgb(99, 100, 104);
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 10;
 }
 
