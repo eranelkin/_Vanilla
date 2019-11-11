@@ -5,16 +5,10 @@ obj1 = {
     if (!!num) console.log(num)
   }
 }
+obj2 = { x: 5 }
+obj3 = { x: 15 }
 
-obj2 = {
-  x: 5
-}
-
-obj3 = {
-  x: 15
-}
-
-Function.prototype.bind = function (context) {
+Function.prototype.myBind = function (context) {
   // method is attached to the prototype, so just refer to it as this.
   const func = this;
   const previousArgs = [].slice.call(arguments, 1);
@@ -26,6 +20,6 @@ Function.prototype.bind = function (context) {
   };
 };
 
-const bindFunc = obj1.print.bind(obj3);
+const bindFunc = obj1.print.myBind(obj3, 11);
 bindFunc(10);
 bindFunc(20);

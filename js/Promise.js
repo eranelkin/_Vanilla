@@ -1,13 +1,11 @@
 class MyPromise {
   constructor(fn) {
     this.callback = null;
-    this.value = null;
     fn(this.res.bind(this));
   }
 
   res(value) {
-    this.value = value;
-    if (!!this.callback) this.callback(this.value);
+    if (!!this.callback) this.callback(value);
   }
 
   myThen(fn) {

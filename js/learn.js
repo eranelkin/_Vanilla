@@ -14,17 +14,17 @@ console.log(filterObj({
   address: "star"
 }, ['name', 'address']));
 
-// function exc2() {
-//   for (var i = 0; i < 5; i++) {
-//     var button = document.createElement('button');
-//     button.appendChild(document.createTextNode(i));
-//     button.addEventListener('click', function(ev, i) {
-//       console.log(ev, i);
-//       console.log(this);
-//     });
-//     document.body.appendChild(button);
-//   }
-// }
+function exc2() {
+  for (var i = 0; i < 5; i++) {
+    var button = document.createElement('button');
+    button.appendChild(document.createTextNode(i));
+    button.addEventListener('click', (function (i) {
+      console.log(i);
+    })(i));
+    document.body.appendChild(button);
+  }
+}
+exc2();
 // function exc3() {
 //   for (var i = 0; i < 5; i++) {
 //     var button = document.createElement('button');
